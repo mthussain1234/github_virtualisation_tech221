@@ -54,6 +54,8 @@ Common commands:
 # Vagrant
 ![image](https://user-images.githubusercontent.com/129314018/232502184-71fbb7c6-a74e-4959-89eb-1403864f7f33.png)
 
+## Vagrant Virtualbox connection
+
 1. After installing both VirtualBox and Vagrant, create a new directory for a new Vagrant Project (use git bash command `mkdir <filename>` in preferred location.
 2. Open Git Bash terminal and using `cd` and `ls` navigate to the created directory, and initialise a new vagrant project using `vagrant init`
 3. Open the Vagrant file made in this directory, we used VScode to edit, and after altering all the commented lines and changing `base` to `ubuntu` (as we want to use ubuntu), your code should look like this:
@@ -69,7 +71,7 @@ end
 6. We now use `vagrant ssh` to ssh into the virtual machine, and another terminal session will open in the VM.
 7. When finished with the VM, use `vagrant halt`, and if you want to destroy the VM we use `vagrant destroy`, this deletes the VM.
 
-# 4 pillars of DevOps
+## 4 pillars of DevOps
 
 ![1520187193360](https://user-images.githubusercontent.com/129314018/232506903-be77be8f-a895-4ba1-b20d-ee64144d615f.jpg)
 
@@ -81,4 +83,7 @@ end
 
 * Monitoring: Constantly keeping track on and measuring performance to find and fix problems as they arise.
 
+## What makes a good dev environment
+
+![image](https://user-images.githubusercontent.com/129314018/232513718-bd28afad-09e7-4aaf-97ad-8c7ef47cfae7.png)
 
