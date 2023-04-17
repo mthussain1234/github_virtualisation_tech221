@@ -71,14 +71,14 @@ end
 
 # 4 pillars of DevOps
 
-
-
-Collaboration and effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
-
-Collaboration: An environment that values cooperation and shared accountability in order to improve all facets of the software delivery lifecycle.
-
-Automation is the practise of using tools and technology to speed up the supply of software while reducing mistakes and inconsistent results from human procedures.
-
-Monitoring: Constantly keeping track on and measuring performance to find and fix problems as they arise.
-
 ![1520187193360](https://user-images.githubusercontent.com/129314018/232506903-be77be8f-a895-4ba1-b20d-ee64144d615f.jpg)
+
+* Collaboration and effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
+
+* Collaboration: An environment that values cooperation and shared accountability in order to improve all facets of the software delivery lifecycle.
+
+* Automation is the practise of using tools and technology to speed up the supply of software while reducing mistakes and inconsistent results from human procedures.
+
+* Monitoring: Constantly keeping track on and measuring performance to find and fix problems as they arise.
+
+
