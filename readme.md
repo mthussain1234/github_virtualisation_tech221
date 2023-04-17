@@ -69,3 +69,16 @@ end
 6. We now use `vagrant ssh` to ssh into the virtual machine, and another terminal session will open in the VM.
 7. When finished with the VM, use `vagrant halt`, and if you want to destroy the VM we use `vagrant destroy`, this deletes the VM.
 
+# 4 pillars of DevOps
+
+
+
+Collaboration and effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
+
+Collaboration: An environment that values cooperation and shared accountability in order to improve all facets of the software delivery lifecycle.
+
+Automation is the practise of using tools and technology to speed up the supply of software while reducing mistakes and inconsistent results from human procedures.
+
+Monitoring: Constantly keeping track on and measuring performance to find and fix problems as they arise.
+
+![1520187193360](https://user-images.githubusercontent.com/129314018/232506903-be77be8f-a895-4ba1-b20d-ee64144d615f.jpg)
