@@ -81,7 +81,7 @@ end
 
 ![1520187193360](https://user-images.githubusercontent.com/129314018/232506903-be77be8f-a895-4ba1-b20d-ee64144d615f.jpg)
 
-* Collaboration and effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
+* Effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
 
 * Collaboration: An environment that values cooperation and shared accountability in order to improve all facets of the software delivery lifecycle.
 
