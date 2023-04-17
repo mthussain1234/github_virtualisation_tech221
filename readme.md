@@ -12,6 +12,10 @@
 
 ## Purpose of making a dev environment?
 
+* A development environment is a safe space for building and testing applications.
+* It allows developers to experiment and debug without affecting the live site.
+* Creating one promotes better software quality, reduces risk, and improves collaboration.
+
 # Vagrant
 ![image](https://user-images.githubusercontent.com/129314018/232502184-71fbb7c6-a74e-4959-89eb-1403864f7f33.png)
 
@@ -36,11 +40,13 @@ end
 
 1. Assuming your VM is halted, `vagrant halt`, we create our shell script using `touch provision.sh`.
 2. We use `nano provision.sh` to edit the contents and we enter the code in the following format:
-    * sudo apt-get update -y
-    * sudo apt-get upgrade -y
-    * sudo apt-get install -y
-    * sudo apt-get install nginx
-    * systemctl status nginx
+
+    * `sudo apt-get update -y`
+    * `sudo apt-get upgrade -y`
+    * `sudo apt-get install -y`
+    * `sudo apt-get install nginx`
+    * `systemctl status nginx`
+    
 3. We now change permissions by using `chmod -x provision.sh` this will make it executable
 4. We now move over to VScode, our vagrant file we created in the Vagrant Virtualbox connection, we will now add another line to utilise this shell script on launch: `config.vm.provision :shell, path: "provision.sh"`.
 5. Going back to our terminal, we use the command `vagrant up`. We can now `vagrant ssh` into the VM, on top of this, grab the ip address from the vagrant file we updated, and copy and paste the ip in the search bar. 
