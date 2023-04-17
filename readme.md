@@ -2,7 +2,13 @@
 
 ## What is a virtual machine?
 
+* A virtual machine (VM) is a software-based computer system that divides a physical machine's resources among several virtual machines. 
+
+* In order to deploy, test, and run legacy applications, each VM runs its own OS and applications in a separate environment.
+
 ## What is a dev environment?
+* A dev environment is a setup that developers use to write and test software applications. 
+* Includes all necessary tools, libraries, and configurations needed to create and run applications. 
 
 ## Purpose of making a dev environment?
 
