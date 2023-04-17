@@ -54,4 +54,18 @@ Common commands:
 # Vagrant
 ![image](https://user-images.githubusercontent.com/129314018/232502184-71fbb7c6-a74e-4959-89eb-1403864f7f33.png)
 
+1. After installing both VirtualBox and Vagrant, create a new directory for a new Vagrant Project (use git bash command `mkdir <filename>` in preferred location.
+2. Open Git Bash terminal and using `cd` and `ls` navigate to the created directory, and initialise a new vagrant project using `vagrant init`
+3. Open the Vagrant file made in this directory, we used VScode to edit, and after altering all the commented lines and changing `base` to `ubuntu` (as we want to use ubuntu), your code should look like this:
+```
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/xenial64"
+end
+```
+
+4. Be sure to save the vagrant file, and turn on **autosave** for future reference
+5. To start the VM by running `vagrant up`.
+6. We now use `vagrant ssh` to ssh into the virtual machine, and another terminal session will open in the VM.
+7. When finished with the VM, use `vagrant halt`, and if you want to destroy the VM we use `vagrant destroy`, this deletes the VM.
 
