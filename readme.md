@@ -100,3 +100,7 @@ If we have different environment == different software versions, configurations,
 When a development environment is designed to support only one application, it is easier to manage, maintain, and update, if not can become complex, cluttered, and difficult to manage.
 
 Same tools and resources for everyone ensures that all developers have access to them regardless of their location or the device they are using. If tools and resources were different can result in problems such as code conflicts, communication breakdowns, or integration issues.
+
+# Vagrant Provisioning
+
+
