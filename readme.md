@@ -12,51 +12,6 @@
 
 ## Purpose of making a dev environment?
 
-## Type vagrant into your terminal and sopy and paste the output as a Vagrant cheatsheet into your README.
-```
-$ vagrant
-Usage: vagrant [options] <command> [<args>]
-
-    -h, --help                       Print this help.
-
-Common commands:
-     autocomplete    manages autocomplete installation on host
-     box             manages boxes: installation, removal, etc.
-     cloud           manages everything related to Vagrant Cloud
-     destroy         stops and deletes all traces of the vagrant machine
-     global-status   outputs status Vagrant environments for this user
-     halt            stops the vagrant machine       
-     help            shows the help for a subcommand 
-     init            initializes a new Vagrant environment by creating a Vagrantfile
-     login
-     package         packages a running vagrant environment into a box
-     plugin          manages plugins: install, uninstall, update, etc.
-     port            displays information about guest port mappings
-     powershell      connects to machine via powershell remoting
-     provision       provisions the vagrant machine  
-     push            deploys code in this environment to a configured destination
-     rdp             connects to machine via RDP     
-     reload          restarts vagrant machine, loads new Vagrantfile configuration
-     resume          resume a suspended vagrant machine
-     serve           start Vagrant server
-     snapshot        manages snapshots: saving, restoring, etc.
-     ssh             connects to machine via SSH     
-     ssh-config      outputs OpenSSH valid configuration to connect to the machine
-     status          outputs status of the vagrant machine
-     suspend         suspends the machine
-     up              starts and provisions the vagrant environment
-     upload          upload to machine via communicator
-     validate        validates the Vagrantfile       
-`vagrant list-commands`.
-        --[no-]color                 Enable or disable color output
-        --machine-readable           Enable machine readable output
-    -v, --version                    Display Vagrant version
-        --debug                      Enable debug output
-        --timestamp                  Enable timestamps on log output
-        --debug-timestamp            Enable debug output with timestamps
-        --no-tty                     Enable non-interactive output
-```
-
 # Vagrant
 ![image](https://user-images.githubusercontent.com/129314018/232502184-71fbb7c6-a74e-4959-89eb-1403864f7f33.png)
 
@@ -76,6 +31,23 @@ end
 5. To start the VM by running `vagrant up`.
 6. We now use `vagrant ssh` to ssh into the virtual machine, and another terminal session will open in the VM.
 7. When finished with the VM, use `vagrant halt`, and if you want to destroy the VM we use `vagrant destroy`, this deletes the VM.
+
+## Vagrant Provisioning
+
+1. Assuming your VM is halted, `vagrant halt`, we create our shell script using `touch provision.sh`.
+2. We use `nano provision.sh` to edit the contents and we enter the code in the following format:
+    * sudo apt-get update -y
+    * sudo apt-get upgrade -y
+    * sudo apt-get install -y
+    * sudo apt-get install nginx
+    * systemctl status nginx
+3. We now change permissions by using `chmod -x provision.sh` this will make it executable
+4. We now move over to VScode, our vagrant file we created in the Vagrant Virtualbox connection, we will now add another line to utilise this shell script on launch: `config.vm.provision :shell, path: "provision.sh"`.
+5. Going back to our terminal, we use the command `vagrant up`. We can now `vagrant ssh` into the VM, on top of this, grab the ip address from the vagrant file we updated, and copy and paste the ip in the search bar. 
+
+We are left with Nginx installed automatically as seen below.
+
+![image](https://user-images.githubusercontent.com/129314018/232545391-d917ce9f-6d98-43f1-9f2d-7d8107567174.png)
 
 ## 4 pillars of DevOps
 
@@ -101,6 +73,5 @@ When a development environment is designed to support only one application, it i
 
 Same tools and resources for everyone ensures that all developers have access to them regardless of their location or the device they are using. If tools and resources were different can result in problems such as code conflicts, communication breakdowns, or integration issues.
 
-# Vagrant Provisioning
 
 
