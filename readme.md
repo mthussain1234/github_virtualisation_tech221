@@ -87,3 +87,10 @@ end
 
 ![image](https://user-images.githubusercontent.com/129314018/232513718-bd28afad-09e7-4aaf-97ad-8c7ef47cfae7.png)
 
+A good development environment should provide simple updates and user-friendly interfaces since they can increase developers' overall productivity and efficiency.
+
+If we have different environment == different software versions, configurations, or dependencies, can result in  unexpected errors, security vulnerabilities, or performance problems.
+
+When a development environment is designed to support only one application, it is easier to manage, maintain, and update, if not can become complex, cluttered, and difficult to manage.
+
+Same tools and resources for everyone ensures that all developers have access to them regardless of their location or the device they are using. If tools and resources were different can result in problems such as code conflicts, communication breakdowns, or integration issues.
