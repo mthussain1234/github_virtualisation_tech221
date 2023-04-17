@@ -52,4 +52,6 @@ Common commands:
 ```
 
 # Vagrant
+![image](https://user-images.githubusercontent.com/129314018/232502184-71fbb7c6-a74e-4959-89eb-1403864f7f33.png)
+
 
