@@ -49,6 +49,9 @@ end
     
 3. We now change permissions by using `chmod -x provision.sh` this will make it executable
 4. We now move over to VScode, our vagrant file we created in the Vagrant Virtualbox connection, we will now add another line to utilise this shell script on launch: `config.vm.provision :shell, path: "provision.sh"`.
+
+We use provision.sh to automate the setup of the virtual machine, so that it is configured consistently every time you run it. It also makes it easier to version control the provisioning process.
+
 5. Going back to our terminal, we use the command `vagrant up`. We can now `vagrant ssh` into the VM, on top of this, grab the ip address from the vagrant file we updated, and copy and paste the ip in the search bar. 
 
 We are left with Nginx installed automatically as seen below.
