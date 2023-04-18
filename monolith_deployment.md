@@ -50,6 +50,13 @@ This will install what is needed to pass the tests we previously had failed.
 
 ![image](https://user-images.githubusercontent.com/129314018/232799997-ecc89a58-b2cc-417d-8bd1-7a64816b2dcb.png)
 
+# Automating
+
+
+![image](https://user-images.githubusercontent.com/129314018/232823447-d13e617e-11e0-4d5a-a7db-31bb524eb17e.png)
+![image](https://user-images.githubusercontent.com/129314018/232823616-03b876c2-0ecb-47e6-98ea-2bdc998fd570.png)
+
+
 
 
 
