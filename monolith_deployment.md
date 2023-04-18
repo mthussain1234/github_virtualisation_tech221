@@ -43,7 +43,11 @@ This will install what is needed to pass the tests we previously had failed.
 14.  We now `cd` into the `app` folder previously discussed and run `npm install`.
 15.  And at last we run `node app.js` to deploy the app.
 16.  To test if the app has deployed we take our previous ip and add `:3000` at the end and the end result should look something like this below.
+
+
 ![image](https://user-images.githubusercontent.com/129314018/232801602-98de8a87-55a4-4326-82dd-4ff1d5d1f1cc.png)
+
+
 ![image](https://user-images.githubusercontent.com/129314018/232799997-ecc89a58-b2cc-417d-8bd1-7a64816b2dcb.png)
 
 
