@@ -65,7 +65,7 @@ This will install what is needed to pass the tests we previously had failed.
 
 `sudo apt-get install python-software-properties -y`: Installs the necessary software properties for adding new PPA repositories. PPA ( PERSONAL PACKAGE ARCHIVE)
 
-`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash`: Downloads and runs a script that adds the Node.js PPA repository to the package sources.
+`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash`: Downloads and runs a script that adds the Node.js repository to the package sources.
 
 `sudo apt-get install nodejs -y`: Installs Node.js.
 
