@@ -54,6 +54,29 @@ This will install what is needed to pass the tests we previously had failed.
 
 
 ![image](https://user-images.githubusercontent.com/129314018/232823447-d13e617e-11e0-4d5a-a7db-31bb524eb17e.png)
+
+`sudo apt-get update -y`: Updates the package lists from the repositories.
+
+`sudo apt-get upgrade -y`: Upgrades the installed packages to their latest version.
+
+`sudo apt-get install nginx -y`: Installs the Nginx web server.
+
+`sudo service nginx start`: Starts the Nginx web server.
+
+`sudo apt-get install python-software-properties -y`: Installs the necessary software properties for adding new PPA repositories. PPA ( PERSONAL PACKAGE ARCHIVE)
+
+`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash`: Downloads and runs a script that adds the Node.js PPA repository to the package sources.
+
+`sudo apt-get install nodejs -y`: Installs Node.js.
+
+`sudo npm install pm2 -g`: Installs PM2, a process manager for Node.js applications.
+
+`cd app`: Changes the current directory to the "app" directory.
+
+`npm install`: Installs the dependencies for the Node.js application in the "app" directory.
+
+`npm start`: Starts the Node.js application in the "app" directory.
+
 ![image](https://user-images.githubusercontent.com/129314018/232823616-03b876c2-0ecb-47e6-98ea-2bdc998fd570.png)
 
 
