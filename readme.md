@@ -43,12 +43,11 @@ end
 
     * `sudo apt-get update -y`
     * `sudo apt-get upgrade -y`
-    * `sudo apt-get install -y`
-    * `sudo apt-get install nginx`
+    * `sudo apt-get install nginx -y`
     * `systemctl status nginx`
     
 3. We now change permissions by using `chmod -x provision.sh` this will make it executable
-4. We now move over to VScode, our vagrant file we created in the Vagrant Virtualbox connection, we will now add another line to utilise this shell script on launch: `config.vm.provision :shell, path: "provision.sh"`.
+4. We now move over to VScode, our vagrant file we created in the Vagrant Virtualbox connection, we will now add another line to utilise this shell script on launch: `config.vm.provision "shell", path: "provision.sh"`.
 
 We use provision.sh to automate the setup of the virtual machine, so that it is configured consistently every time you run it. It also makes it easier to version control the provisioning process.
 
