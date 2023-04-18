@@ -62,6 +62,9 @@ We are left with Nginx installed automatically as seen below.
 
 ![1520187193360](https://user-images.githubusercontent.com/129314018/232506903-be77be8f-a895-4ba1-b20d-ee64144d615f.jpg)
 
+![image](https://user-images.githubusercontent.com/129314018/232733892-726b557a-2d09-40fe-91c9-10cc1dd1d40c.png)
+
+
 * Effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
 
 * Collaboration: An environment that values cooperation and shared accountability in order to improve all facets of the software delivery lifecycle.
