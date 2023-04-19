@@ -25,6 +25,10 @@
 
 * The virtual machine can be easily destroyed and recreated as needed, making it easy to test different configs and scenarios without using the developers "real" computer.
 
+* Provisioners are tools that let you to automate the VM config. 
+* They allow you to execute scripts and install software automatically when deploying the new VM
+
+
 ## Vagrant Virtualbox connection
 
 1. After installing both VirtualBox and Vagrant, create a new directory for a new Vagrant Project (use git bash command `mkdir <filename>` in preferred location.
@@ -65,7 +69,18 @@ We are left with Nginx installed automatically as seen below.
 
 ## 4 pillars of DevOps
 
-![image](https://user-images.githubusercontent.com/129314018/232733892-726b557a-2d09-40fe-91c9-10cc1dd1d40c.png)
+* Cost
+  *  Being efficient as possible, and focusing on reducing costs without sacrificing quality.
+  *  Optimizing resources to improve efficiency.
+* Flexibility
+  * Quickly respond to changing customer needs and market demands
+  * Increases agility
+* Ease of use
+  * User friendly UI allows for easy adoption by users, can lead to increased productivity and increase customer satisfaction
+  * can make documentation easier to understand and easy to make
+ * Robustness
+  * involves automated etsting, monitoring and feedback mechanisms, ends up with software being thoroughly tested
+  * allows for issues to be quickly resolved
 
 
 ## What makes a good dev environment
