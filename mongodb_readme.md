@@ -50,7 +50,7 @@
  * Start MongoDB service - use `mongod` command
  * Open terminal and type `mongo` to connect to server
  * This starts MongoDB shell
- * In this shell type `use <db-name` and type your specific database name you want to connect to
+ * In this shell type `use <db-name>` and type your specific database name you want to connect to
  * If the data base needs authentication credentials we use the following command
    * `db.auth("<username>", "<password>")`
    * Making sure to replace both `username` and `password` with the corresponding details you have
