@@ -23,7 +23,33 @@
 * Another reason it is popular is due to it offering flexible data model, automatic sharding, and high availability.
   * Sharding is a way to horizontally scale a DB dividing it into smaller pieces called **shards**. 
   * Data is more manageable after sharding
+  * JSON-like document format to store data, which allows for flexible data modeling.
 
 ### Make a diagram to show MongoDB architecture
 
 ![image](https://user-images.githubusercontent.com/129314018/233045350-1b936922-e4b2-48a8-8b2b-39d93e4c24ba.png)
+
+
+### Seeding
+
+* Seeding in MongoDB is the process of populating a database with initial data
+* DBs in MongoDB may need to be seeded to make sure there is data present for either testing or for the intial stages of the appication where this inital data is needed
+
+### MongoDB Ports
+
+* MongoDB uses port 27017 by default
+
+
+### To connect to a MongoDB DB:
+
+ * Install MongoDB client (can also use MongoDB Atlas (cloud based))
+ * Start MongoDB service - use `mongod` command
+ * Open terminal and type `mongo` to connect to server
+ * This starts MongoDB shell
+ * In this shell type `use <db-name` and type your specific database name you want to connect to
+ * If the data base needs authentication credentials we use the following command
+   * `db.auth("<username>", "<password>")`
+   * Making sure to replace both `username` and `password` with the corresponding details you have
+ * Once you connect succesfully, you can interact with it using the specific mongo shell commands.
+
+
