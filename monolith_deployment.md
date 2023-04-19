@@ -79,6 +79,18 @@ This will install what is needed to pass the tests we previously had failed.
 
 ![image](https://user-images.githubusercontent.com/129314018/232823616-03b876c2-0ecb-47e6-98ea-2bdc998fd570.png)
 
+# How to run a process as a background process in Linux
+
+* To run a process as a background process in Linux we type the command which should be followed by `&`
+  * For example : `npm install &` - will start Node.js application in the background and return control to the user.
+
+### Running PM2 as a background process
+
+* We follow the steps we did before and we add an `&` at the end of the `npm install`, which will now start the app with the pm2 process manager, but a key different from before is it will now run in the background
+* All the while giving us control, as opposed to before.
+
+![image](https://user-images.githubusercontent.com/129314018/233119647-0c3907dc-7721-43a7-a53c-c2d1e2718f95.png)
+
 
 
 
