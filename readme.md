@@ -67,6 +67,10 @@ We are left with Nginx installed automatically as seen below.
 
 ![image](https://user-images.githubusercontent.com/129314018/232545391-d917ce9f-6d98-43f1-9f2d-7d8107567174.png)
 
+## MongoDB Provisioning
+
+[To know how we provisioned MongoDB, click on me!](https://github.com/mthussain1234/tech221_mongo/blob/main/README.md#provisioning-mongodb)
+
 ## 4 pillars of DevOps
 
 * Cost
