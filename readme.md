@@ -19,6 +19,12 @@
 # Vagrant
 ![image](https://user-images.githubusercontent.com/129314018/232502184-71fbb7c6-a74e-4959-89eb-1403864f7f33.png)
 
+* The developer will run Vagrant, which is used to manage virtual machines. Vagrant communicates with VirtualBox, to create virtual machines according to the developer's needs.
+
+* The developer can use the virtual machine to test their software in an isolated environment that closely matches the production environment. 
+
+* The virtual machine can be easily destroyed and recreated as needed, making it easy to test different configs and scenarios without using the developers "real" computer.
+
 ## Vagrant Virtualbox connection
 
 1. After installing both VirtualBox and Vagrant, create a new directory for a new Vagrant Project (use git bash command `mkdir <filename>` in preferred location.
@@ -66,13 +72,13 @@ We are left with Nginx installed automatically as seen below.
 
 ![image](https://user-images.githubusercontent.com/129314018/232513718-bd28afad-09e7-4aaf-97ad-8c7ef47cfae7.png)
 
-A good development environment should provide simple updates and user-friendly interfaces since they can increase developers' overall productivity and efficiency.
+* A good development environment should provide simple updates and user-friendly interfaces since they can increase developers' overall productivity and efficiency.
 
-If we have different environment == different software versions, configurations, or dependencies, can result in  unexpected errors, security vulnerabilities, or performance problems.
+* If we have different environment == different software versions, configurations, or dependencies, can result in  unexpected errors, security vulnerabilities, or performance problems.
 
-When a development environment is designed to support only one application, it is easier to manage, maintain, and update, if not can become complex, cluttered, and difficult to manage.
+* When a development environment is designed to support only one application, it is easier to manage, maintain, and update, if not can become complex, cluttered, and difficult to manage.
 
-Same tools and resources for everyone ensures that all developers have access to them regardless of their location or the device they are using. If tools and resources were different can result in problems such as code conflicts, communication breakdowns, or integration issues.
+* Same tools and resources for everyone ensures that all developers have access to them regardless of their location or the device they are using. If tools and resources were different can result in problems such as code conflicts, communication breakdowns, or integration issues.
 
 
 
