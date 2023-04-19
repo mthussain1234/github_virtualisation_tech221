@@ -22,6 +22,7 @@
 * It is open source software
 * Another reason it is popular is due to it offering flexible data model, automatic sharding, and high availability.
   * Sharding is a way to horizontally scale a DB dividing it into smaller pieces called **shards**. 
+  * Sharding can improve database performance, scalability, and availability, but it can also increase complexity and cost
   * Data is more manageable after sharding
   * JSON-like document format to store data, which allows for flexible data modeling.
 
