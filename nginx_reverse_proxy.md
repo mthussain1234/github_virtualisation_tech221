@@ -10,13 +10,15 @@ A reverse proxy is a server that sits between the internet and a web server. It 
 
 Forward proxy stands between client and internet, fowrwards client requests to the end server on the internet, and will ultimately send the response back to the client.
 
-A reverse proxy is used to give clients indirect access to web servers, whereas a forward proxy is used to give clients indirect access to the internet.
+### Direct comparisons between forward and reverse proxy
 
-A reverse proxy is situated on the server's side of the network, while a forward proxy is situated on the client's side.
+* A reverse proxy is used to give clients indirect access to web servers, whereas a forward proxy is used to give clients indirect access to the internet.
 
-Since the client must set up their browser to use the forward proxy, the client can see the forward proxy. A reverse proxy, on the other hand, is invisible to the client because the client is unaware of its existence.
+* A reverse proxy is situated on the server's side of the network, while a forward proxy is situated on the client's side.
 
-Utilising a reverse proxy can help balance the load and boost performance by distributing incoming requests among several web servers. This capability is not available through a forward proxy.
+* Since the client must set up their browser to use the forward proxy, the client can see the forward proxy. A reverse proxy, on the other hand, is invisible to the client because the client is unaware of its existence.
+
+* Utilising a reverse proxy can help balance the load and boost performance by distributing incoming requests among several web servers. This capability is not available through a forward proxy.
 
 ## Make a diagram for the above point to go with your explanation
 
