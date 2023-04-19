@@ -62,14 +62,6 @@ We are left with Nginx installed automatically as seen below.
 ![image](https://user-images.githubusercontent.com/129314018/232733892-726b557a-2d09-40fe-91c9-10cc1dd1d40c.png)
 
 
-* Effective communication across teams are essential to avoiding misunderstandings and enhancing the calibre of software.
-
-* Collaboration: An environment that values cooperation and shared accountability in order to improve all facets of the software delivery lifecycle.
-
-* Automation is the practise of using tools and technology to speed up the supply of software while reducing mistakes and inconsistent results from human procedures.
-
-* Monitoring: Constantly keeping track on and measuring performance to find and fix problems as they arise.
-
 ## What makes a good dev environment
 
 ![image](https://user-images.githubusercontent.com/129314018/232513718-bd28afad-09e7-4aaf-97ad-8c7ef47cfae7.png)
