@@ -4,7 +4,7 @@
 
 Ports are communication endpoints that enable computers to send and receive data over a network.
 
-Port numbers refere to a type of protocol, and we have run into these before in terms of HTTP (being port 80), SSH (port 22).
+Port numbers refer to a type of protocol, and we have run into these before in terms of HTTP (being port 80), SSH (port 22).
 This will ultimately allow computers to communicate with each other over a network.
 
 ## What is a reverse proxy? How is it different to a proxy?
