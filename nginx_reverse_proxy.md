@@ -39,3 +39,41 @@ To set up an Nginx reverse proxy, you need to:
 * Configure a new virtual host that listens on the desired port (e.g., port 80)
 * Set up the reverse proxy in the virtual host configuration, making clear which backend server(s) to forward requests to.
 * Start or restart the Nginx service to apply the new configuration.
+
+This code we use 
+```
+cd /etc/nginx/sites-available
+sudo rm -rf default
+sudo echo "
+server {
+    listen 80;
+    server_name _;
+    location / {
+        proxy_pass http://192.168.10.100:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+"
+```
+
+`cd /etc/nginx/sites-available`: This command changes the current working directory to the Nginx sites-available directory.
+
+`sudo rm -rf default`: This command deletes the default Nginx configuration file that may exist in the sites-available directory.
+
+`sudo echo "..."`: This command adds a new server block configuration for Nginx by printing the text enclosed in double-quotes to the terminal and redirecting it to the Nginx default configuration file.
+
+`listen 80;`: This line sets the server to listen on port 80.
+
+`server_name _;`: This line sets the server name to match any request that comes to it.
+
+`proxy_pass http://192.168.10.100:3000;`: This line sets the proxy_pass to  IP address and port 3000
+
+We are then left with the below screen when typing the proxy pass ip address.
+
+![image](https://user-images.githubusercontent.com/129314018/233114970-98e06011-8084-4b25-bed5-4bf003ed9872.png)
+
+
