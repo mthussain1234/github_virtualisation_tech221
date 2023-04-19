@@ -37,5 +37,5 @@ To set up an Nginx reverse proxy, you need to:
 
 * Install Nginx on the server
 * Configure a new virtual host that listens on the desired port (e.g., port 80)
-* Set up the reverse proxy in the virtual host configuration, specifying the backend server(s) to forward requests to, and any necessary proxy headers.
+* Set up the reverse proxy in the virtual host configuration, making clear which backend server(s) to forward requests to.
 * Start or restart the Nginx service to apply the new configuration.
