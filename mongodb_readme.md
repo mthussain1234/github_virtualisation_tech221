@@ -37,7 +37,10 @@
 
 ### MongoDB Ports
 
-* MongoDB uses port 27017 by default
+* MongoDB uses port `27017` by default, `27018`, `27019` are alt ports also used for client connections
+* `28017` is the default port used by the MongoDB HTTP interface (gives us a web-based interfact to query and admin the database)
+* `22` - SSH connections - Linux server
+* `443` Used for HTTPs connections to MongoDB which are hosted on a webserver.
 
 
 ### To connect to a MongoDB DB:
