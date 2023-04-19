@@ -4,6 +4,9 @@
 
 Ports are communication endpoints that enable computers to send and receive data over a network.
 
+Port numbers refere to a type of protocol, and we have run into these before in terms of HTTP (being port 80), SSH (port 22).
+This will ultimately allow computers to communicate with each other over a network.
+
 ## What is a reverse proxy? How is it different to a proxy?
 
 A reverse proxy is a server that sits between the internet and a web server. It forwards client requests to the according web server and sends back the according response back to the client, whilst also hiding the web server itself from the client.
