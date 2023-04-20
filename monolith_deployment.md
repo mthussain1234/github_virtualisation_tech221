@@ -86,12 +86,19 @@ This will install what is needed to pass the tests we previously had failed.
 
 ### Running PM2 as a background process
 
+[ERRORS]
 * We follow the steps we did before and we add an `&` at the end of the `npm install`, which will now start the app with the pm2 process manager, but a key different from before is it will now run in the background
 * All the while giving us control, as opposed to before.
 
-![image](https://user-images.githubusercontent.com/129314018/233119647-0c3907dc-7721-43a7-a53c-c2d1e2718f95.png)
+** When using this method `&` we do in fact go through errors, as the process can terminate when you exit the terminal
 
+** We instead use `pm2 start app.js` but to use this we must change our node support version whcih was ay 6.x to 16.x and the code for that is:
 
+`curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -`
+
+![image](https://user-images.githubusercontent.com/129314018/233321285-226b46bd-cac4-4c53-a54a-2fc9068adf1f.png)
+
+* When running through the app again `vagrant up` and `vagrant ssh`
 
 
 
