@@ -90,15 +90,18 @@ This will install what is needed to pass the tests we previously had failed.
 * We follow the steps we did before and we add an `&` at the end of the `npm install`, which will now start the app with the pm2 process manager, but a key different from before is it will now run in the background
 * All the while giving us control, as opposed to before.
 
-** When using this method `&` we do in fact go through errors, as the process can terminate when you exit the terminal
 
-** We instead use `pm2 start app.js` but to use this we must change our node support version whcih was ay 6.x to 16.x and the code for that is:
+[IMPORVEMENTS]
+
+**When using this method `&` we do in fact go through errors, as the process can terminate when you exit the terminal**
+
+**We instead use `pm2 start app.js` but to use this we must change our node support version whcih was ay 6.x to 16.x and the code for that is:**
 
 `curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -`
 
 ![image](https://user-images.githubusercontent.com/129314018/233321285-226b46bd-cac4-4c53-a54a-2fc9068adf1f.png)
 
-* When running through the app again `vagrant up` and `vagrant ssh`
+* When running through the app again `vagrant up` and `vagrant ssh`, it should launch both virtual machines we had previously made without it hanging, as this gives back control to the user, and should look something like this: 
 
 
 
