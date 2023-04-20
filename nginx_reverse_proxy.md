@@ -61,19 +61,8 @@ server {
 * `sudo ln -s /etc/nginx/sites-available/reverse-proxy /etc/nginx/sites-enabled/` is also entered in the VM terminal, this create a symbolic link to enable the new reverse proxy configuration
 * `sudo nginx -t` and `sudo service nginx reload` - entered into vm, to check if nginx is installed, and to reload nginx.
 
-`cd /etc/nginx/sites-available`: This command changes the current working directory to the Nginx sites-available directory.
 
-`sudo rm -rf default`: This command deletes the default Nginx configuration file that may exist in the sites-available directory.
-
-`sudo echo "..."`: This command adds a new server block configuration for Nginx by printing the text enclosed in double-quotes to the terminal and redirecting it to the Nginx default configuration file.
-
-`listen 80;`: This line sets the server to listen on port 80.
-
-`server_name _;`: This line sets the server name to match any request that comes to it.
-
-`proxy_pass http://192.168.10.100:3000;`: This line sets the proxy_pass to  IP address and port 3000
-
-We are then left with the below screen when typing the proxy pass ip address.
+* We are then left with the below screen when typing the ip address.
 
 ![image](https://user-images.githubusercontent.com/129314018/233114970-98e06011-8084-4b25-bed5-4bf003ed9872.png)
 
