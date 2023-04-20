@@ -109,17 +109,30 @@ This will install what is needed to pass the tests we previously had failed.
 
 1. From the previous steps, we remove `pm2 start app.js` as it can interfere with it from the `app` shell script
 2. We `vagrant up` then `vagrant ssh app` and `vagrant ssh db` to access both virtual machines
+
+
 ![image](https://user-images.githubusercontent.com/129314018/233373798-b140d81c-8d36-45ba-bfea-f9f8b7f7fd0a.png)
+
+
 3. On our `db` virtual machine we use command `sudo nano /etc/mongod.conf`, once we enter the nano editor
 we change the `bindIP` to 0.0.0.0 (scroll down)
+
 ![image](https://user-images.githubusercontent.com/129314018/233374170-e3dd6dd7-351e-464a-a6d7-180ff4f439c8.png)
+
 4. Save and exit by doing these in order, `CTRL + X` -> `y` -> `Enter`
-5. `source .bashrc - this runs the bashrc file and applies changes
-6.  Now we enter command ` printenv DB_HOST`, and then `cd` into our app directory
-7.  `npm install` - we manually install app now due to the reason we got rid of `pm2 start app.js`
+5. On the `app` we use `sudo nano .bashrc` and we add at the end of the file `export DB_HOST=mongodb://192.168.10.150:27017/posts` - check if DB_HOST is on right ip address
+6. `CTRL X` `Y` `ENTER`, to save.
+7. `source .bashrc - this runs the bashrc file and applies changes
+8.  Now we enter command ` printenv DB_HOST`, and then `cd` into our app directory
+9.  `npm install` - we manually install app now due to the reason we got rid of `pm2 start app.js`
+
+
 ![image](https://user-images.githubusercontent.com/129314018/233376306-39d6f3d5-77e4-4c75-9751-6b988629ecad.png)
+
 8. When you see the Database cleared and seeded as shown above we run the following 2 commands:
    * `node seeds/seed.js` and `node app.js` - which will seed the database and run the app
+
+
 9. If all is well we should recieve the following output from the `db` virtual machine as shown below
 
 ![image](https://user-images.githubusercontent.com/129314018/233376768-1f901a56-efa5-4cd2-a550-dda56ce8339a.png)
