@@ -39,26 +39,27 @@ To set up an Nginx reverse proxy, you need to:
 * Configure a new virtual host that listens on the desired port (e.g., port 80)
 * Set up the reverse proxy in the virtual host configuration, making clear which backend server(s) to forward requests to.
 * Start or restart the Nginx service to apply the new configuration.
-
-This code we use 
+### How we did it to deploy the Sparta App
+* After `vagrant up` and `vagrant ssh` into our virtual machine for this app
+* We use `sudo nano /etc/nginx/sites-available/reverse-proxy` to create our reverse proxy
+* In this file we enter the code:
 ```
-cd /etc/nginx/sites-available
-sudo rm -rf default
-sudo echo "
 server {
     listen 80;
-    server_name _;
+    server_name 192.168.10.100;
+
     location / {
-        proxy_pass http://192.168.10.100:3000;
+        proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
+        proxy_set_header Connection "upgrade";
         proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
     }
 }
-"
+
 ```
+* `sudo ln -s /etc/nginx/sites-available/reverse-proxy /etc/nginx/sites-enabled/` is also entered in the VM terminal, this create a symbolic link to enable the new reverse proxy configuration
+* `sudo nginx -t` and `sudo service nginx reload` - entered into vm, to check if nginx is installed, and to reload nginx.
 
 `cd /etc/nginx/sites-available`: This command changes the current working directory to the Nginx sites-available directory.
 
