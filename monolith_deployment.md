@@ -103,5 +103,7 @@ This will install what is needed to pass the tests we previously had failed.
 
 * When running through the app again `vagrant up` and `vagrant ssh`, it should launch both virtual machines we had previously made without it hanging, as this gives back control to the user, and should look something like this: 
 
+![image](https://user-images.githubusercontent.com/129314018/233325101-b5634120-ae96-4f90-bf7b-39276f1fd0a6.png)
+
 
 
